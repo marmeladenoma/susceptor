@@ -1,1 +1,4 @@
 rootProject.name = 'susceptor'
+include 'susceptor-persistence'
+include 'susceptor-dependency-injection'
+

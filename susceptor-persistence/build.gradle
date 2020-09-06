@@ -1,0 +1,16 @@
+plugins {
+  id 'java-library'
+}
+
+dependencies {
+  api project(':susceptor-dependency-injection')
+  implementation 'dev.morphia.morphia:morphia-core:2.0.0'
+}
+
+jar {
+  from {
+    configurations
+      .compileClasspath
+      .collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
