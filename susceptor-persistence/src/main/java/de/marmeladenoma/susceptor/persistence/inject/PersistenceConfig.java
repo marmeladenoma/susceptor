@@ -82,7 +82,16 @@ public final class PersistenceConfig {
     private PersistenceConfigBuilder() {
     }
 
+    @Deprecated
     public PersistenceConfigBuilder withMongoConnectionStrong(
+      String mongoConnectionString
+    ) {
+      Preconditions.checkNotNull(mongoConnectionString);
+      this.mongoConnectionString = mongoConnectionString;
+      return this;
+    }
+
+    public PersistenceConfigBuilder withMongoConnectionString(
       String mongoConnectionString
     ) {
       Preconditions.checkNotNull(mongoConnectionString);
