@@ -1,0 +1,14 @@
+plugins {
+  id 'java-library'
+}
+
+repositories {
+  maven {
+    url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+  }
+}
+
+dependencies {
+  api "org.spigotmc:spigot-api:1.16.2-R0.1-SNAPSHOT"
+  implementation project(':susceptor-dependency-injection')
+}

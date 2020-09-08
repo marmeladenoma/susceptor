@@ -1,0 +1,5 @@
+name: Susceptor
+main: de.marmeladenoma.susceptor.SusceptorPlugin
+version: 0.3.0
+
+api-version: "1.16"

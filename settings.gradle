@@ -1,4 +1,7 @@
 rootProject.name = 'susceptor'
 include 'susceptor-persistence'
 include 'susceptor-dependency-injection'
+include 'susceptor-bundle'
+include 'susceptor-spigot'
+include 'susceptor-plugin'
 
